@@ -2,40 +2,38 @@
  Simli Facial Lipsync + Millis AI Agent demo 
  
  ## Try Demo
- 1. Rename .env_sample to .env and paste your API keys
+ ### 1. Keys
+Rename .env_sample to .env and paste your API keys: [SIMLI API KEY](https://www.simli.com/profile) and [MILLIS API KEY](https://www.millis.ai/)
 ```js
-NEXT_PUBLIC_SIMLI_API_KEY= YOUR-SIMLI-KEY
-NEXT_PUBLIC_MILLIS_API_KEY= YOUR-MILLIS-KEY
+NEXT_PUBLIC_SIMLI_API_KEY = 'YOUR-SIMLI-KEY'
+NEXT_PUBLIC_MILLIS_API_KEY = 'YOUR-MILLIS-KEY'
 ```
 
-Simli: [GET API KEY](https://www.simli.com/profile)
-`
-Millis: [GET API KEY](https://www.millis.ai/)
-
-2. Install packages
+### 2. Install packages
+First install npm packages
 ```bash
 npm install
 ```
+Then install millis packages
 ```bash
 cd @millisai/web-sdk
+```
+```bash
 npm install
+```
+```bash
 cd ../..
 ```
 
-3. Put your Simli FaceID and Millis AgentID
-
-Go to `./app/page.tsx` and change the following
-
-```
-const simli_faceid = "SIMLI-FACE-ID";`
+### 3. Customize your agent
+Go to `./app/page.tsx` and change your Simli FaceID and Millis AgentID. <br/>
+Check availave simli faces: [AVAILABLE FACES](https://docs.simli.com/api-reference/available-faces)
+```bash
+const simli_faceid = "SIMLI-FACE-ID";
 const millis_agentid = "MILLIS-AGENT-ID";
 ```
-`
-Simli Faces: [AVAILABLE FACES](https://docs.simli.com/api-reference/available-faces)
 
-Millis: Create an Agent through Millis dashboard
-
-4. Run
+### 4. Finally Run
 ```bash
 npm run dev
 ```
