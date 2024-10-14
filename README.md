@@ -1,5 +1,10 @@
 # simli-millis-demo
  Simli Facial Lipsync + Millis AI Agent demo 
+
+
+https://github.com/user-attachments/assets/94d331b2-b1e8-4191-b6f0-d0af93a45e91
+
+
  
  ## Try Demo
  ### 1. Keys
