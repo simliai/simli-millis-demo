@@ -16,13 +16,7 @@ npm install
 ```
 Then install millis packages
 ```bash
-cd @millisai/web-sdk
-```
-```bash
-npm install
-```
-```bash
-cd ../..
+npm install --prefix @millisai/web-sdk
 ```
 
 ### 3. Customize your agent

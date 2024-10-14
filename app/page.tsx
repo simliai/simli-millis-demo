@@ -4,8 +4,8 @@ import axios from "axios";
 import { SimliClient } from "simli-client";
 import Millis from "../@millisai/web-sdk";
 
-const simli_faceid = "314a0419-f3ff-4f2b-b5db-1c2343480841"; // Put your Simli Face ID here
-const millis_agentid = "-O91-TAlwGw3Pw2PlNS-"; // Put your Millis Agent ID here
+const simli_faceid = "4145d354-fd78-4c29-b6b1-0663a04e8d7b"; // Put your Simli Face ID here
+const millis_agentid = "-O99x7LT0ilzOhjEWbaL"; // Put your Millis Agent ID here
 
 const simliClient = new SimliClient();
 const msClient = Millis.createClient({
@@ -84,7 +84,7 @@ const Demo = () => {
     });
 
     msClient.on("onaudio", (audio) => {
-      console.log("Millis: Audio received:", audio);
+      // console.log("Millis: Audio received:", audio);
 
       // Millis Client repeats the audio chunks twice, so we take one and skip the other
       if (audioChunkNumber.current % 2 === 0) {
@@ -96,7 +96,7 @@ const Demo = () => {
     });
 
     msClient.on("onresponsetext", (text, payload) => {
-      console.log("Millis: Response text:", text, "Payload:", payload);
+      // console.log("Millis: Response text:", text, "Payload:", payload);
     });
 
     msClient.on("ontranscript", (text, payload) => {
@@ -104,11 +104,11 @@ const Demo = () => {
     });
 
     msClient.on("analyzer", (analyzer) => {
-      console.log("Millis: Analyzer node:", analyzer);
+      // console.log("Millis: Analyzer node:", analyzer);
     });
 
     msClient.on("useraudioready", (data) => {
-      console.log("Millis: User audio ready:", data);
+      // console.log("Millis: User audio ready:", data);
     });
 
     msClient.on("onlatency", (latency) => {
